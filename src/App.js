@@ -23,8 +23,6 @@ class App extends Component {
   }
 
   tabClick = async (eventKey) => {
-    console.log(eventKey);
-
     let news = await Api.fetch(eventKey);
     this.setState({ 'news': news })
   }
