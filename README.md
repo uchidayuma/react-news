@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## リモートエンジニアを目指す人のためのプログラミング講座レベル1 Reactでニュースサイトを作ろう
+
+未経験からリモートエンジニアを目指すためのプログラミング講座レベル1のソースコードです。
+
+## 仕様
+
+ReactからNewsApiを呼び、最新のニュースやカテゴリー別ニュースをレンダリングします。
+
+## デモ
+
+http://react-news.remotework.recipes/
+
 ## Available Scripts
 
 In the project directory, you can run:
