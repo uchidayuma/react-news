@@ -12,6 +12,8 @@ ReactからNewsApiを呼び、最新のニュースやカテゴリー別ニュ�
 
 http://react-news.remotework.recipes/
 
+[![Image from Gyazo](https://i.gyazo.com/298ae15b192fe53bb9530c629c093e35.gif)](https://gyazo.com/298ae15b192fe53bb9530c629c093e35)
+
 ## Available Scripts
 
 In the project directory, you can run:
