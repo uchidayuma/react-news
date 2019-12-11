@@ -3,7 +3,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo,
+  .footer-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -83,4 +84,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
   line-height: 3;
+}
+.footer-logo {
+  height: 50px;
+}
+
+@keyframes footer-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -12,7 +12,7 @@ export function fetch(category = null) {
     return results.data.articles;
   })
     .catch((error) => {
-      console.log(error);
-      return 'ニュースの取得に失敗しました。';
+      console.log(error)
+      alert('ニュースの取得に失敗しました。')
     })
 }
