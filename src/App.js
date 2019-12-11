@@ -24,10 +24,10 @@ class App extends Component {
 
   render() {
     console.log(this.state.news)
-    const newsPanel = this.state.news.map(val =>
-      <Col md="4" key={val.id}>
-        <a href={val.url}>
-          <Card className='card-body'>
+    const newsPanel = this.state.news.map((val, index) =>
+      <Col md="4" key={index} >
+        <a href={val.url} target='blank'>
+          <Card className=''>
             <Card.Img className='card-image' variant="top" src={val.urlToImage} />
             <Card.Body>
               <Card.Title className='card-title'>{val.title}</Card.Title>

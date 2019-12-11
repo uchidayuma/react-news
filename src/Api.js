@@ -9,7 +9,6 @@ export function fetch(category = null) {
       'category': category,
     }
   }).then((results) => {
-    console.log(results.data.articles);
     return results.data.articles;
   })
     .catch((error) => {
