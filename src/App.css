@@ -71,6 +71,10 @@
   color: #212529;
 }
 
+.tab-content {
+  background-color: #fff;
+  padding: 10px;
+}
 .footer {
   background-color: #282c34;
   display: flex;

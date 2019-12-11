@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col, Card } from 'react-bootstrap';
+import { Row, Col, Card, Tabs, Tab } from 'react-bootstrap';
 
 import * as Api from "./Api.js";
 
@@ -22,10 +22,17 @@ class App extends Component {
     this.setState({ 'news': news })
   }
 
+  tabClick = async (eventKey) => {
+    console.log(eventKey)
+    let news = await Api.fetch(eventKey);
+    await console.log(news);
+    this.setState({ 'news': news })
+  }
+
   render() {
     console.log(this.state.news)
     const newsPanel = this.state.news.map((val, index) =>
-      <Col md="4" key={index} >
+      <Col sm="6" md="4" lg="3" key={index} >
         <a href={val.url} target='blank'>
           <Card className=''>
             <Card.Img className='card-image' variant="top" src={val.urlToImage} />
@@ -37,14 +44,6 @@ class App extends Component {
         </a>
       </Col >
     )
-    // 
-    //   <li className='index-ul__item' key={val.id}>
-    //     <img src={F2.s3url() + "/images/emojies/" + val.source} className='index-ul__image' />
-    //     <p className='index-ul-icons'>
-    //       <FaHeart color='#777' onClick={() => alert('Comming Soon...')} className='index-ul-icons__item cursor' />
-    //       <FaArrowDown color='#777' onClick={() => Api.download(val.source)} className='index-ul-icons__item cursor' />
-    //     </p>
-    //   </li >
     return (
       <div className="App">
         <header className="App-header">
@@ -55,10 +54,26 @@ class App extends Component {
           </div>
         </header>
         <main className="main">
-          <Row>
-
-            {newsPanel}
-          </Row>
+          <Tabs defaultActiveKey="" onSelect={this.tabClick}>
+            <Tab eventKey="" title="Home">
+              <Row>{newsPanel}</Row>
+            </Tab>
+            <Tab eventKey="business" title="経済">
+              <Row>{newsPanel}</Row>
+            </Tab>
+            <Tab eventKey="entertainment" title="エンタメ">
+              <Row>{newsPanel}</Row>
+            </Tab>
+            <Tab eventKey="health" title="健康">
+              <Row>{newsPanel}</Row>
+            </Tab>
+            <Tab eventKey="science" title="科学">
+              <Row>{newsPanel}</Row>
+            </Tab>
+            <Tab eventKey="technology" title="テクノロジー">
+              <Row>{newsPanel}</Row>
+            </Tab>
+          </Tabs>
         </main>
         <footer className="footer">React News</footer>
       </div>
