@@ -12,7 +12,7 @@ ReactからNewsApiを呼び、最新のニュースやカテゴリー別ニュ�
 
 http://react-news.remotework.recipes/
 
-[![Image from Gyazo](https://i.gyazo.com/298ae15b192fe53bb9530c629c093e35.gif)](https://gyazo.com/298ae15b192fe53bb9530c629c093e35)
+[![Image from Gyazo](https://i.gyazo.com/fe320ebc9913ac8f71a696144876ad3e.gif)](https://gyazo.com/fe320ebc9913ac8f71a696144876ad3e)
 
 ## Available Scripts
 
