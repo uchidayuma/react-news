@@ -14,6 +14,18 @@ http://react-news.remotework.recipes/
 
 ![786babd02ddfdad9b8d531de0b60a199](https://user-images.githubusercontent.com/13364817/70669516-f9946180-1cb9-11ea-815f-4eef60d72ba1.gif)
 
+## 環境設定ファイルの解説
+
+当ソースコードは `.env`ファイルから、APIキーを読み込んでいます。
+
+ルートディレクトリに `.env.local` を設置し、
+
+```
+REACT_APP_NEWS_API_KEY='NewsApiのAPIキーを入力'
+```
+
+上記の内容を記述してください。
+
 ## Available Scripts
 
 In the project directory, you can run:
